@@ -21,8 +21,8 @@ public class TestBase {
     private static ProjectConfiguration projectConfiguration = new ProjectConfiguration(webConfig);
 
 
-    @BeforeEach
-    void setUp(){
+    @BeforeAll
+    public static void setUp(){
         SelenideLogger.addListener("allure", new AllureSelenide());
         projectConfiguration.webConfig();
     }
