@@ -35,8 +35,6 @@ public class TestBase {
             Attach.browserConsoleLogs();
         }
 
-        closeWebDriver();
-
         if (projectConfiguration.isRemote()) {
             Attach.addVideo(projectConfiguration.getVideoStorageUrl());
         }
