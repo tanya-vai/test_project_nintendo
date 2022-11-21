@@ -1,0 +1,9 @@
+5605774372:AAHBCkuYl1JVvhnnyvX0bdofD41DbUOWJsE
+
+-1001797183318
+
+curl -X POST -H 'Content-Type: application/json' -d '{"chat_id": "-1001797183318", "text": "This is a test message from Tanyavai", "disable_notification": true}' https://api.telegram.org/bot5605774372:AAHBCkuYl1JVvhnnyvX0bdofD41DbUOWJsE/sendMessage
+
+java "-DconfigFile=notifications/telegram.json" -jar notifications/allure-notifications-4.2.1.jar
+
+https://api.telegram.org/bot5605774372:AAHBCkuYl1JVvhnnyvX0bdofD41DbUOWJsE/getUpdates
