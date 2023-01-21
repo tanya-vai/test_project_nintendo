@@ -45,7 +45,6 @@ public class NintendoWebTests extends TestBase {
         mainPage.openPage();
         Selenide.refresh();
         mainPage.searchForGame("mario odyssey");
-        sleep(5000);
         gamePage.clickOnPhysicalCheckbox()
                 .checkThatPhysicalCheckboxIsTicked()
                 .checkThatAddToCartButtonIsDisplayed()
@@ -60,7 +59,6 @@ public class NintendoWebTests extends TestBase {
     void checkErrorMessageForLimitGame() {
         mainPage.openPage()
                 .searchForGame("mario odyssey");
-        sleep(5000);
         gamePage.clickOnPhysicalCheckbox()
                 .checkThatPhysicalCheckboxIsTicked()
                 .clickAddItemTillLimitReached()

@@ -27,6 +27,7 @@ public class TestBase {
     public static void setUp(){
         SelenideLogger.addListener("allure", new AllureSelenide());
         projectConfiguration.webConfig();
+        Configuration.headless = true;
     }
 
     @AfterEach

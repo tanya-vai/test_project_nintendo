@@ -22,7 +22,7 @@ public class MainPage {
             searchInputPlaceholder = $("[data-testid=\"form\"]");
     ElementsCollection
             headerMenu = $$(".Topstyles__Flex-sc-16dp618-1.jouQ"),
-            topStoreProducts = $$(".gsUzHs");
+            topStoreProducts = $$(".bWauIu");
 
     @Step("Open the main page")
     public MainPage openPage() {
