@@ -1,11 +1,11 @@
 {
   "base": {
-    "project": "some project",
-    "environment": "some env",
-    "comment": "some comment",
+    "project": "Nintendo Project",
+    "environment": "qa.guru",
+    "comment": "made by TanyaVai",
     "reportLink": "",
     "language": "en",
-    "allureFolder": "build/reports/allure-report/allureReport",
+    "allureFolder": "build/reports/allure-report/allureReport/",
     "enableChart": true
   },
   "telegram": {
