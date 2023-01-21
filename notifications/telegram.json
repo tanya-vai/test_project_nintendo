@@ -5,7 +5,7 @@
     "comment": "made by TanyaVai",
     "reportLink": "",
     "language": "en",
-    "allureFolder": "build/reports/allure-report/allureReport/",
+    "allureFolder": "allure-report/",
     "enableChart": true
   },
   "telegram": {
