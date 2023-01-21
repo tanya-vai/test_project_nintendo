@@ -11,6 +11,8 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.junit.jupiter.params.provider.ValueSource;
 
+import static com.codeborne.selenide.Selenide.sleep;
+
 public class NintendoWebTests extends TestBase {
 
     MainPage mainPage = new MainPage();
@@ -43,6 +45,7 @@ public class NintendoWebTests extends TestBase {
         mainPage.openPage();
         Selenide.refresh();
         mainPage.searchForGame("mario odyssey");
+        sleep(5000);
         gamePage.clickOnPhysicalCheckbox()
                 .checkThatPhysicalCheckboxIsTicked()
                 .checkThatAddToCartButtonIsDisplayed()
@@ -57,6 +60,7 @@ public class NintendoWebTests extends TestBase {
     void checkErrorMessageForLimitGame() {
         mainPage.openPage()
                 .searchForGame("mario odyssey");
+        sleep(5000);
         gamePage.clickOnPhysicalCheckbox()
                 .checkThatPhysicalCheckboxIsTicked()
                 .clickAddItemTillLimitReached()
