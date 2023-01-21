@@ -6,6 +6,7 @@ import com.nintendo.config.Browser;
 import com.nintendo.config.ConfigReader;
 import com.nintendo.config.ProjectConfiguration;
 import com.nintendo.config.WebConfig;
+import com.nintendo.pages.MainPage;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -19,6 +20,7 @@ public class TestBase {
 
     private static final WebConfig webConfig = ConfigReader.Instance.read();
     private static ProjectConfiguration projectConfiguration = new ProjectConfiguration(webConfig);
+    MainPage mainPage = new MainPage();
 
 
     @BeforeAll
